@@ -1,16 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>India primum league</title>
+  <meta charset="UTF-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=ai-legible&utm_source=comment&utm_medium=referral&utm_id=fd5d2ad9-f9b0-4539-9d34-a53b7fb38c64
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+<meta name="hosting-provider" content="Netlify">
+<meta name="netlify-deploy" content="https://netlify.new/?utm_campaign=ai-legible&amp;utm_source=meta&amp;utm_medium=referral&amp;utm_id=fd5d2ad9-f9b0-4539-9d34-a53b7fb38c64">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPL Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fb; /* light background */
+    }
+
+    /* Header */
+    header {
+      background-color: #003366; /* dark blue IPL theme */
+      color: white;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    /* Main section */
+    main {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .teams {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .teams a {
+      display: block;
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .teams a:hover {
+      transform: scale(1.05);
+    }
+
+    .teams img {
+      max-width: 100px;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
-    <div>
-<h1>
-    India Primum League 
-</h1>
-<a href=""></a>
-</div>
+
+  <!-- Header -->
+  <header>
+    <img src="ipl-logo.jpg" style="border-radius:50%" alt="IPL Logo">
+    <h1>Indian Premier League</h1>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <h2>Select Your Team</h2>
+    <div class="teams">
+      <a href='/csk'><img src="csk-logo.png" alt="CSK"><p>Chennai Super Kings</p></a>
+      <a href='/mi'><img src="mi-logo.jpeg" alt="MI"><p>Mumbai Indians</p></a>
+      <a href='/rcb'><img src="rcb-logo.jpg" alt="RCB"><p>Royal Challengers Bangalore</p></a>
+      <a href='/kkr'><img src="kkr-logo.png" alt="KKR"><p>Kolkata Knight Riders</p></a>
+      <a href='/srh'><img src="srh-logo.png" alt="SRH"><p>Sunrisers Hyderabad</p></a>
+      <a href='/rr'><img src="rr-logo.png" alt="RR"><p>Rajasthan Royals</p></a>
+      <a href='/dc'><img src="dc-logo.png" alt="DC"><p>Delhi Capitals</p></a>
+      <a href='/lsg'><img src="lsg-logo.png" alt="LSG"><p>Lucknow Super Giants</p></a>
+      <a href='/gt'><img src="gt-logo.png" alt="GT"><p>Gujarat Titans</p></a>
+      <a href='/pbks'><img src="pbks-logo.jpg" alt="PBKS"><p>Punjab Kings</p></a>
+    </div>
+  </main>
+
 </body>
 </html>
